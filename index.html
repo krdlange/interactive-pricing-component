@@ -25,57 +25,66 @@
       </header>
 
       <article class="price-slider-wrapper">
+        <span id="total-pageviews">100k pageviews</span>
         <form action="" method="post">
-          <label for="pageview-slider">100k Pageviews</label>
-            <input type="range" id="pageview-slider" oninput="displayPrice(this.value);" name="pageview-slider" min="1" max="5" step="1" list="pageview-price"/>
-            <datalist id="pageview-price">
-              <option value="1"></option>
-              <option value="2"></option>
-              <option value="3"></option>
-              <option value="4"></option>
-              <option value="5"></option>
-            </datalist>
-            <p>Amount: <span id="display-price"></span></p>
+          <label for="pageview-slider"></label>
+          <input
+            type="range"
+            id="pageview-slider"
+            value=""
+            oninput="displayPrice(this.value);"
+            name="pageview-slider"
+            min="1"
+            max="5"
+            step="1"
+            list="pageview-price"
+          />
+          <datalist id="pageview-price">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+          </datalist>
+          <p>
+            Amount: <span id="display-price">16</span
+            ><span class="amount">$ </span> <span class="time"> /month </span>
+          </p>
         </form>
 
-          
-          <div class="price-quote">
-            <span class="amount">$ </span>
-            <span class="time"> /month </span>
-          </div>
-          <div class="billing-toggle">
-            <div>
-              <span class="billing-time"> Monthly Billing </span>
-            </div>
-            <div class="toggle"></div>
-            <div>
-              <span class="billing-time"> Yearly Billing </span>
-            </div>
-            <div class="discount">
-              <span>25% </span>
-              <span>discount</span>
-            </div>
-          </div>
-
-          <hr />
-
-          <ul class="usps">
-            <li>
-              <div class="check-icon"></div>
-              <div><p>Unlimited websites</p></div>
-            </li>
-            <li>
-              <div class="check-icon"></div>
-              <div><p>100% data ownership</p></div>
-            </li>
-            <li>
-              <div class="check-icon"></div>
-              <div><p>Email reports</p></div>
-            </li>
-          </ul>
+        <div class="billing-toggle">
           <div>
-            <button>Start my trial</button>
+            <span class="billing-time"> Monthly Billing </span>
           </div>
+          <div class="toggle"></div>
+          <div>
+            <span class="billing-time"> Yearly Billing </span>
+          </div>
+          <div class="discount">
+            <span>25% </span>
+            <span>discount</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <ul class="usps">
+          <li>
+            <div class="check-icon"></div>
+            <div><p>Unlimited websites</p></div>
+          </li>
+          <li>
+            <div class="check-icon"></div>
+            <div><p>100% data ownership</p></div>
+          </li>
+          <li>
+            <div class="check-icon"></div>
+            <div><p>Email reports</p></div>
+          </li>
+        </ul>
+        <div>
+          <button>Start my trial</button>
+        </div>
       </article>
     </section>
   </body>
