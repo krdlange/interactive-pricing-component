@@ -5,6 +5,8 @@
 *.sketch
 *.fig
 *.md
+*.scss
+*.css.map
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################

@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ffffff;
+  border-radius: 8px;
+  margin: 16px;
+  padding: 16px;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+}
+.card p.slider__title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.card p.slider__price {
+  text-align: center;
+}
+.card p.slider__price span#slider__amount {
+  font-size: 24px;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  height: 8px;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  height: 8px;
+  background-color: #ECF0FB;
+  border-radius: 5px;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(16, 216, 196);
+  background-image: url("/images/icon-slider.svg");
+  background-size: 22px 13px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin-top: -20px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}/*# sourceMappingURL=style.css.map */

@@ -11,81 +11,93 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="index.js"></script>
 
     <title>Interactive pricing component</title>
   </head>
 
   <body>
-    <section>
-      <header>
-        <h2>Simple, traffic-based pricing</h2>
-        <p>Sign-up for our 30-day trial.</p>
-        <p>No credit card required.</p>
-      </header>
+    <section class="block">
+      <div class="block__wrapper">
+        <header class="block__header">
+          <h2>Simple, traffic-based pricing</h2>
+          <p>Sign-up for our 30-day trial.</p>
+          <p>No credit card required.</p>
+        </header>
 
-      <article class="price-slider-wrapper">
-        <span id="total-pageviews">100k pageviews</span>
-        <form action="" method="post">
-          <label for="pageview-slider"></label>
-          <input
-            type="range"
-            id="pageview-slider"
-            value=""
-            oninput="displayPrice(this.value);"
-            name="pageview-slider"
-            min="1"
-            max="5"
-            step="1"
-            list="pageview-price"
-          />
-          <datalist id="pageview-price">
-            <option value="1"></option>
-            <option value="2"></option>
-            <option value="3"></option>
-            <option value="4"></option>
-            <option value="5"></option>
-          </datalist>
-          <p>
-            Amount: <span id="display-price">16</span
-            ><span class="amount">$ </span> <span class="time"> /month </span>
-          </p>
-        </form>
+        <article class="card">
+          <form class="slider" action="" method="">
+            <label for="pageview-slider">
+              <p class="slider__title" id="slider__title">100k pageviews</p>
+            </label>
+            <input
+              class="slider__input"
+              type="range"
+              id="pageview-slider"
+              oninput="displayPrice(this.value);"
+              name="pageview-slider"
+              min="1"
+              max="5"
+              step="1"
+              list="pageview-price"
+            />
+            <datalist id="pageview-price">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+            </datalist>
 
-        <div class="billing-toggle">
+            <label for="slider-price"
+              ><p class="slider__price">
+                <span id="slider__amount">$16.00 </span>
+                <span class="slider__duration"> /month </span>
+              </p>
+            </label>
+            <output id="pageview-value" name="pageview-value"></output>
+          </form>
+
+          <div class="billing">
+            <div class="">
+              <span class="billing__duration"> Monthly Billing </span>
+            </div>
+            <div class="billing__toggle"></div>
+            <div>
+              <span class="billing__duration"> Yearly Billing </span>
+            </div>
+            <div class="billing__discount">
+              <span>25% </span>
+              <span>discount</span>
+            </div>
+          </div>
+
+          <ul class="usps">
+            <li>
+              <div class="check-icon"></div>
+              <div class="usp__text"><p>Unlimited websites</p></div>
+            </li>
+            <li>
+              <div class="check-icon"></div>
+              <div class="usp__text"><p>100% data ownership</p></div>
+            </li>
+            <li>
+              <div class="check-icon"></div>
+              <div class="usp__text"><p>Email reports</p></div>
+            </li>
+          </ul>
           <div>
-            <span class="billing-time"> Monthly Billing </span>
+            <button class="button__primary">Start my trial</button>
           </div>
-          <div class="toggle"></div>
-          <div>
-            <span class="billing-time"> Yearly Billing </span>
-          </div>
-          <div class="discount">
-            <span>25% </span>
-            <span>discount</span>
-          </div>
-        </div>
-
-        <hr />
-
-        <ul class="usps">
-          <li>
-            <div class="check-icon"></div>
-            <div><p>Unlimited websites</p></div>
-          </li>
-          <li>
-            <div class="check-icon"></div>
-            <div><p>100% data ownership</p></div>
-          </li>
-          <li>
-            <div class="check-icon"></div>
-            <div><p>Email reports</p></div>
-          </li>
-        </ul>
-        <div>
-          <button>Start my trial</button>
-        </div>
-      </article>
+        </article>
+      </div>
     </section>
   </body>
 </html>
