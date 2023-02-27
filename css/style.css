@@ -37,13 +37,47 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   height: 40px;
   width: 40px;
-  background-color: rgb(16, 216, 196);
+  background-color: #10D8C4;
   background-image: url("/images/icon-slider.svg");
   background-size: 22px 13px;
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 50%;
   margin-top: -20px;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 22px;
+  background-color: #CFD8EF;
+  border-radius: 30px;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 4px;
+  left: 4px;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 25px;
+}
+
+.checkbox:checked + .toggle {
+  background-color: #7AEADF;
+}
+
+/* Checkbox vanished */
+.checkbox {
+  display: none;
 }
 
 body {
