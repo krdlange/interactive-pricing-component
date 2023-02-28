@@ -46,6 +46,34 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -20px;
 }
 
+.billing {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.billing__toggle {
+  display: flex;
+  margin: auto 8px;
+  justify-content: center;
+  width: 5%;
+}
+
+.duration__left__label {
+  display: flex;
+  align-self: center;
+  width: 47.5%;
+  justify-content: flex-end;
+}
+
+.duration__right__label {
+  display: flex;
+  align-self: center;
+  width: 47.5%;
+  justify-content: flex-start;
+}
+
 .toggle {
   position: relative;
   display: inline-block;
@@ -75,7 +103,6 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #7AEADF;
 }
 
-/* Checkbox vanished */
 .checkbox {
   display: none;
 }
