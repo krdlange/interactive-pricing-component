@@ -10,7 +10,7 @@
 .card p.slider__title {
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 800;
   text-transform: uppercase;
 }
 .card p.slider__price {
@@ -18,6 +18,9 @@
 }
 .card p.slider__price span#slider__amount {
   font-size: 24px;
+}
+.card .button__container {
+  margin: 0 auto;
 }
 
 input[type=range] {
@@ -105,6 +108,47 @@ input[type=range]::-webkit-slider-thumb {
 
 .checkbox {
   display: none;
+}
+
+.usps {
+  list-style: none;
+  padding: 0;
+  margin: 24px auto 32px;
+  font-weight: 600;
+}
+
+.usps li::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background: url("/images/icon-check.svg") no-repeat center;
+  background-size: contain;
+}
+
+.usp-item {
+  display: flex;
+  justify-content: center;
+  margin: 10px 8px auto;
+  color: #848EAD;
+}
+
+.button__primary {
+  height: 41px;
+  width: 170px;
+  left: 0px;
+  top: 0px;
+  background: #293356;
+  border-radius: 20.5px;
+  color: #848EAD;
+  border-style: none;
+  font-weight: 800;
+}
+
+.button__primary:hover {
+  color: #ffffff;
 }
 
 body {
