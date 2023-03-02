@@ -151,6 +151,24 @@ input[type=range]::-webkit-slider-thumb {
   color: #ffffff;
 }
 
+h2.title {
+  color: #293356;
+  text-align: center;
+}
+
+p.description {
+  color: #848EAD;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+header.block__header {
+  display: flex;
+  flex-direction: column;
+  margin-top: 104px;
+}
+
 body {
   font-family: "Manrope", sans-serif;
 }/*# sourceMappingURL=style.css.map */
