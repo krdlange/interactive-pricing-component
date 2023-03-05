@@ -9,16 +9,23 @@
   width: 70%;
 }
 .card p.slider__title {
+  margin: 0px;
+  color: #848EAD;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 20px;
   text-align: center;
-  font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
+  line-height: 16px;
+  letter-spacing: 1.71429px;
 }
 .card p.slider__price {
   text-align: center;
 }
 .card p.slider__price span#slider__amount {
-  font-size: 24px;
+  font-size: 16px;
 }
 .card .button__container {
   margin: 0 auto;
@@ -26,9 +33,13 @@
 
 input[type=range] {
   -webkit-appearance: none;
-  height: 8px;
+  height: 40px;
+  width: 279px;
+  left: 24px;
+  top: 75px;
+  border-radius: [object Object] px;
   background-color: transparent;
-  margin: 0;
+  margin: 25px auto;
   padding: 0;
   width: 100%;
 }
@@ -152,24 +163,50 @@ input[type=range]::-webkit-slider-thumb {
   color: #ffffff;
 }
 
+header.block__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 89px auto 64px auto;
+  width: 100%;
+  height: 146px;
+}
+
+div.header__background {
+  justify-content: center;
+  background-image: url("/images/pattern-circles.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 h2.title {
+  margin: 0px;
   color: #293356;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 27px;
+  letter-spacing: 0px;
   text-align: center;
-  padding: 60px 22px 30px 22px;
-  margin: 0;
+  margin: 32px 25px 8px 25px;
 }
 
 p.description {
+  margin: 0px;
   color: #848EAD;
-  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8125rem;
   text-align: center;
-  margin-top: 12px;
+  margin: 0px auto 32px auto;
+  line-height: 23px;
+  width: 50%;
 }
 
 .block__wrapper {
   overflow: visible;
-  display: block;
-  width: 1440px;
+  display: flex;
+  flex-direction: column;
   height: 440px;
   background-color: #F1F5FE;
   border-radius: 0px 0px 0px 191.5px;
@@ -182,6 +219,7 @@ header .block__header {
 
 html, body {
   font-family: "Manrope", sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }/*# sourceMappingURL=style.css.map */
