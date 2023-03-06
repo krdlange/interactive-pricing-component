@@ -4,9 +4,11 @@
 #####################################################
 *.sketch
 *.fig
-*.md
 *.scss
 *.css.map
+README-fe-mentor.md
+README-template.md
+style-guide.md
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################

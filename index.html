@@ -40,6 +40,7 @@
             <label for="pageview-slider">
               <p class="slider__title" id="slider__title">100k pageviews</p>
             </label>
+            <div class="slider__container">        
             <input
               class="slider__input"
               type="range"
@@ -58,13 +59,17 @@
               <option value="4"></option>
               <option value="5"></option>
             </datalist>
+            </div>
 
-            <label for="slider-price"
+            <div class="price-container">
+              <label for="slider-price"
               ><p class="slider__price">
                 <span id="slider__amount">$16.00 </span>
                 <span class="slider__duration"> /month </span>
               </p>
             </label>
+            </div>
+            
             <output id="pageview-value" name="pageview-value"></output>
           </form>
 
