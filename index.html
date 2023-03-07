@@ -24,7 +24,6 @@
   </head>
 
   <body>
-    <!-- <div class="main__wrapper"> -->
     <section class="block">
       <div class="block__wrapper">
         <header class="block__header">
@@ -62,20 +61,17 @@
             </div>
 
             <div class="price-container">
-              <label for="slider-price"
-              ><p class="slider__price">
-                <span id="slider__amount">$16.00 </span>
+              <label for="slider-price">
+                <span class="slider__amount" id="slider__amount">$16.00 </span>
                 <span class="slider__duration"> /month </span>
-              </p>
             </label>
             </div>
-            
             <output id="pageview-value" name="pageview-value"></output>
           </form>
 
           <div class="billing">
             <div class="duration__left__label">
-              <span class=""> Monthly Billing </span>
+              <span class="duration__text__left"> Monthly Billing </span>
             </div>
             <div class="billing__toggle">
               <input type="checkbox" id="switch"
@@ -83,14 +79,17 @@
               <label for="switch" class="toggle">
             </div>
             <div class="duration__right__label">
-              <span> Yearly Billing </span>
-              <div class="billing__discount">
-              <span>25% </span>
-              <span>discount</span>
+              <div class="">
+                <span class="duration__text__right"> Yearly Billing </span>
+              </div>
+              
+              <div class="discount__container">
+                <span class="discount__percentage">25% </span>
+              </div>
+              
+              </div>
+              
             </div>
-            </div>
-            
-          </div>
 
           <ul class="usps">
             <div class="usp-item">
@@ -119,6 +118,5 @@
         </article>
       </div>
     </section>
-  <!-- </div> -->
   </body>
 </html>

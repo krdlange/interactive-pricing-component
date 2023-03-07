@@ -7,35 +7,61 @@
   border-radius: 8px;
   margin: 0 24px;
   box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  margin: auto;
 }
-.card p.slider__title {
+.card .slider__title {
   color: #848EAD;
   font-style: normal;
   font-size: 0.75rem;
-  text-align: center;
+  font-weight: 600;
   font-weight: 800;
   text-transform: uppercase;
   line-height: 16px;
   letter-spacing: 1.71429px;
   margin: 34px auto 25px auto;
+  text-align: center;
 }
-.card div.price-container {
+.card .price-container {
   display: flex;
   justify-content: center;
   margin-top: 24px;
 }
-.card span#slider__amount {
+.card .slider__amount {
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: -0.8px;
   color: #293356;
+  vertical-align: middle;
   line-height: 44px;
 }
+.card .slider__duration {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: center;
+  color: #848EAD;
+  vertical-align: middle;
+  line-height: 19px;
+}
+.card .duration__text__left {
+  color: #848EAD;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16px;
+}
+.card .duration__text__right {
+  color: #848EAD;
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 16px;
+}
 .card .button__container {
-  margin: 0 auto;
+  margin: 32px auto;
 }
 
-div.slider__container {
+.slider__container {
   display: flex;
   justify-content: center;
 }
@@ -94,27 +120,48 @@ input[type=range]::-moz-range-thumb {
   justify-content: center;
   flex-flow: row nowrap;
   width: 100%;
+  margin: 34px auto 38px auto;
+  align-items: center;
 }
 
 .billing__toggle {
   display: flex;
   margin: auto 8px;
   justify-content: center;
-  width: 5%;
 }
 
 .duration__left__label {
   display: flex;
-  align-self: center;
   width: 47.5%;
   justify-content: flex-end;
 }
 
 .duration__right__label {
   display: flex;
-  align-self: center;
   width: 47.5%;
   justify-content: flex-start;
+}
+
+.discount__container {
+  display: flex;
+  background-color: #FEEDE8;
+  justify-content: center;
+  align-items: center;
+  height: 19px;
+  width: 41px;
+  border-radius: 9.5px;
+  margin-left: 5.5px;
+}
+
+.discount__percentage {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 0.625rem;
+  line-height: 14px;
+  text-align: center;
+  color: #FF8D68;
+  height: 14px;
+  margin: auto;
 }
 
 .toggle {
@@ -191,7 +238,7 @@ input[type=range]::-moz-range-thumb {
   color: #ffffff;
 }
 
-header.block__header {
+.block__header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,7 +247,7 @@ header.block__header {
   height: 146px;
 }
 
-div.header__background {
+.header__background {
   justify-content: center;
   background-image: url("/images/pattern-circles.svg");
   background-position: center center;
@@ -208,8 +255,7 @@ div.header__background {
   background-size: contain;
 }
 
-h2.title {
-  margin: 0px;
+.title {
   color: #293356;
   font-weight: 800;
   font-size: 1.25rem;
@@ -219,7 +265,7 @@ h2.title {
   margin: 32px 25px 8px 25px;
 }
 
-p.description {
+.description {
   margin: 0px;
   color: #848EAD;
   font-style: normal;
