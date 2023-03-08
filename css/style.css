@@ -58,7 +58,11 @@
   line-height: 16px;
 }
 .card .button__container {
-  margin: 32px auto;
+  margin: 0 auto 32px auto;
+}
+.card .line {
+  height: 1px;
+  background: #ECF0FB;
 }
 
 .slider__container {
@@ -201,14 +205,17 @@ input[type=range]::-moz-range-thumb {
   list-style: none;
   padding: 0;
   margin: 24px auto 32px;
+  color: #848EAD;
+  font-style: normal;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
 .usps li::before {
   content: "";
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
   margin-right: 8px;
   vertical-align: middle;
   background: url("/images/icon-check.svg") no-repeat center;
@@ -218,8 +225,12 @@ input[type=range]::-moz-range-thumb {
 .usp-item {
   display: flex;
   justify-content: center;
-  margin: 10px 8px auto;
   color: #848EAD;
+  margin-bottom: 10px;
+}
+
+.usp-item:last-child {
+  margin-bottom: 0;
 }
 
 .button__primary {
