@@ -121,7 +121,6 @@ input[type=range]::-moz-range-thumb {
 
 .billing {
   display: flex;
-  justify-content: center;
   flex-flow: row nowrap;
   width: 100%;
   margin: 34px auto 38px auto;
@@ -144,6 +143,11 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   width: 47.5%;
   justify-content: flex-start;
+  align-items: center;
+}
+
+.duration__container {
+  display: flex;
 }
 
 .discount__container {
